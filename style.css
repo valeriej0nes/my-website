@@ -57,9 +57,19 @@ nav {
     background-color: #111;
 }
 
-nav .logo {
-    font-weight: bold;
-    font-size: 24px;
+nav .logo-container {
+    display: flex;
+    gap: 15px; /* space between icons */
+}
+
+nav .logo img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s; /* optional hover effect */
+}
+
+nav .logo img:hover {
+    transform: scale(1.1); /* subtle hover effect */
 }
 
 nav ul {

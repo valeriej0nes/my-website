@@ -30,10 +30,12 @@ body {
     overflow-x: hidden;
 }
 
+/*
 html, body {
     height: 100%;
     overflow: hidden;
 }
+*/
 
 .blob-dark {
     position: fixed;
@@ -56,7 +58,6 @@ html, body {
     border-radius: 30% 70% 100% 0% / 0% 100% 0% 100%;
     z-index: -1;
 }
-
 
 /* Line Spacing */
 p {
@@ -189,4 +190,86 @@ nav ul li a:hover {
     .hero-box {
         margin-left: 8rem; /* more space on big screens */
     }
+}
+
+.blob-about-1 {
+    position: absolute;
+    top: -150px;  /* shift up so it overlaps slightly offscreen */
+    left: -150px;
+    width: 500px;
+    height: 700px;
+    background: #c6f4de; /* brighter green */
+    border-radius: 100% 0% 100% 0% / 0% 18% 82% 100%;
+    z-index: -1;
+}
+
+.blob-about-2 {
+    position: absolute;
+    top: 650px;
+    right: 0px; /* position it on the right side */
+    left: auto; /* reset left property */
+    width: 300px;
+    height: 900px;
+    background: #53f1a5; /* brighter green */
+    border-radius: 100% 0% 0% 100% / 51% 100% 0% 49%;
+    z-index: 1;
+}
+
+.who-am-i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    min-height: 100vh; /* fill screen height */
+    padding: 0 1rem; /* small horizontal padding */
+}
+
+.who-am-i-box {
+    background: #1e1e1e;
+    margin-top: -5rem;
+    border-radius: 1rem; /* rounded corners */
+    padding: clamp(1rem, 3vw, 2rem); /* scales with screen width */
+    max-width: 100ch; /* keeps text width readable */
+    /* box-shadow: 0 4px 20px rgba(0,0,0,0.3); */
+    margin-left: 20rem;
+    z-index: 0;
+}
+
+.who-am-i-box p {
+    margin-bottom: 2rem; /* adds gap below the paragraph */
+    font-size: clamp(1rem, 2.5vw, 1rem);
+}
+
+.who-am-i-box h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin-bottom: 20px;
+}
+
+.my-experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    min-height: 100vh; /* fill screen height */
+    padding: 0 1rem; /* small horizontal padding */
+}
+
+.my-experience-box {
+    background: #1e1e1e;
+    margin-top: -3rem;
+    border-radius: 1rem; /* rounded corners */
+    padding: clamp(1rem, 3vw, 2rem); /* scales with screen width */
+    max-width: 100ch; /* keeps text width readable */
+    /* box-shadow: 0 4px 20px rgba(0,0,0,0.3); */
+    margin-right: 20rem;
+}
+
+.my-experience-box p {
+    margin-bottom: 5rem; /* adds gap below the paragraph */
+    font-size: clamp(1rem, 2.5vw, 1rem);
+}
+
+.my-experience-box h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin-bottom: 20px;
 }
